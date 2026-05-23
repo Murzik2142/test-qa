@@ -10,22 +10,16 @@
   tags:
     - user
 
-- name: Generate random password for qa user
-  ansible.builtin.set_fact:
-    random_password: "{{ lookup('password', '/dev/null length=16 chars=ascii_letters,digits') }}"
-  tags:
-    - password
-
 - name: Set password for qa user
   ansible.builtin.user:
     name: "{{ qa_username }}"
-    password: "{{ random_password | password_hash('sha512') }}"
+    password: "{{ qa_password | password_hash('sha512') }}"
   tags:
     - password
 
 - name: Display generated password
   ansible.builtin.debug:
-    msg: "Generated password for qa user: {{ random_password }}"
+    msg: "Password for qa user: {{ qa_password }}"
   tags:
     - password
 

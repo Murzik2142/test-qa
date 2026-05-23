@@ -3,3 +3,4 @@
 qa_username: qa
 qa_shell: /bin/bash
 qa_ssh_key_type: ed25519
+qa_password: "24052026"
