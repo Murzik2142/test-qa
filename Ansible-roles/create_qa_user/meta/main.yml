@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: QA Team
+  description: Role to create qa user with random password and SSH keys
+  company: Your Company
+  license: MIT
+  min_ansible_version: "2.9"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+    - name: Debian
+      versions:
+        - bullseye
+        - bookworm
+
+dependencies: []
