@@ -14,5 +14,10 @@ galaxy_info:
       versions:
         - bullseye
         - bookworm
+  galaxy_tags:
+    - system
+    - user
+    - security
+    - ssh
 
 dependencies: []

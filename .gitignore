@@ -4,84 +4,42 @@
 .vault_pass
 *.log
 
-# Dependencies
-node_modules/
-
-# Python related
-__pycache__/
+# Compiled and build artifacts
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
+__pycache__/
+*.o
+*.obj
+
+# Dependencies
 .venv/
-.ENV
-.venv.bak/
-pip-log.txt
-pip-delete-this-directory.txt
+venv/
+node_modules/
 
 # Logs and temp files
 *.log
 *.tmp
 *.swp
 
-# Environment variables
+# Environment
 .env
 .env.local
-*.env*
+.env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS generated files
+# System files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# Coverage
-.coverage
+# Coverage reports
 coverage/
 htmlcov/
-.nyc_output/
+.coverage
 
-# Build artifacts
-build/
+# Distribution / packaging
 dist/
+build/
 *.egg-info/
-target/
-.gradle/
-bin/
-obj/
-
-# Compression files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```

@@ -2,4 +2,4 @@
 # Default variables for create_qa_user role
 qa_username: qa
 qa_shell: /bin/bash
-qa_ssh_key_bits: 4096
+qa_ssh_key_type: ed25519
