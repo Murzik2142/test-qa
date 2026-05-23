@@ -1,35 +1,35 @@
-```gitignore
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-*.class
-*.exe
-*.dll
-*.so
-*.a
-*.out
+```
+# Ansible specific ignores
+*.retry
+.vault_pass
+*.log
 
 # Dependencies
 node_modules/
+
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
 venv/
 .venv/
-.env
-.env.local
-.env.*
-
-# Build directories
-dist/
-build/
-target/
-*.egg-info/
+.ENV
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Logs and temp files
 *.log
 *.tmp
 *.swp
-*.swo
+
+# Environment variables
+.env
+.env.local
+*.env*
 
 # Editors
 .vscode/
@@ -37,22 +37,31 @@ target/
 *.swp
 *.swo
 
-# System files
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Coverage
+.coverage
 coverage/
 htmlcov/
-.coverage
+.nyc_output/
 
-# Python specific
-*.pyc
-__pycache__/
-.pytest_cache/
-.mypy_cache/
+# Build artifacts
+build/
+dist/
+*.egg-info/
+target/
+.gradle/
+bin/
+obj/
 
-# Compressed files
+# Compression files
 *.zip
 *.gz
 *.tar
