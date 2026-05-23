@@ -2,5 +2,8 @@
 - name: Create QA user with random password and SSH keys
   hosts: all
   become: true
-  roles:
+  tags:
     - create_qa_user
+    - user_management
+  roles:
+    - 01-create_qa_user
